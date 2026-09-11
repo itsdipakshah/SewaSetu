@@ -5,12 +5,13 @@ import Badge from "@mui/material/Badge";
 import IconButton from "@mui/material/IconButton";
 import { GitCompare, Heart,ShoppingCartPlus } from "lucide-react";
 import Tooltip from '@mui/material/Tooltip';
+import Nevbar from "../Nevbar/Nevbar";
 
 
 const Header = () => {
   return (
-    <header>
-      <div className="top-strip py-2 border-t-1 border-b-2 border-[#e5e7eb]">
+    <header className='bg-white'>
+      <div className="top-strip py-2 border-t-[1px] border-b-[1px] border-gray-200">
         <div className="container">
           <div className="flex items-center justify-between">
             <div className="col1 w-[50%]">
@@ -43,8 +44,8 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="header py-2">
-        <div className="container flex items-center justify-between">
+      <div className="header py-2  border-b-[1px] border-gray-200">
+        <div className="container flex items-center justify-between gap-4">
           <div className="col1 w-[25%]">
             <Link to={"/"}>
               <img src="/logo1.jpg" />{" "}
@@ -60,18 +61,19 @@ const Header = () => {
               <li className="list-none">
                 <Link
                   to="/login"
-                  className="text-[13px] link transition font-[500]"
+                  className="text-[13px] link transition font-[600]"
                 >
                   Login{" "}
                 </Link>{" "}
                 | &nbsp;
                 <Link
                   to="/register"
-                  className="text-[13px] link transition font-[500]"
+                  className="text-[13px] link transition font-[600]"
                 >
                   Register{" "}
                 </Link>
               </li>
+
               <li className="list-none gap-3 flex items-center justify-center">
                  <Tooltip title="Wishlist">
                 <IconButton aria-label="show 4 unread messages">
@@ -102,6 +104,9 @@ const Header = () => {
           </div>
         </div>
       </div>
+     
+     <Nevbar/>
+     
     </header>
   );
 };
