@@ -48,7 +48,7 @@ const Header = () => {
         <div className="container flex items-center justify-between gap-4">
           <div className="col1 w-[25%]">
             <Link to={"/"}>
-              <img src="/logo1.jpg" />{" "}
+              <img src="/logo.png" />{" "}
             </Link>
           </div>
 
@@ -56,19 +56,19 @@ const Header = () => {
             <SearchPage />
           </div>
 
-          <div className="col3 w-[30%] items-center pl-5">
+          <div className="col3 w-[30%] items-center !pl-20">
             <ul className="flex items-center gap-4 justify-between">
               <li className="list-none">
                 <Link
                   to="/login"
-                  className="text-[13px] link transition font-[600]"
+                  className="text-[16px] link transition font-[600]"
                 >
                   Login{" "}
                 </Link>{" "}
                 | &nbsp;
                 <Link
                   to="/register"
-                  className="text-[13px] link transition font-[600]"
+                  className="text-[16px] link transition font-[600]"
                 >
                   Register{" "}
                 </Link>
