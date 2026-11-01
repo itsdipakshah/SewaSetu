@@ -2,6 +2,7 @@ import React from 'react'
 import HomeSlider from '../../components/slider/HomeSlider'
 import HomeCatSlider from '../../components/catSlider/HomeCatSlider'
 import { FaShippingFast } from "react-icons/fa";
+import AdsBanner from '../../components/AdsBanner/AdsBanner';
 
 const Home = () => {
   return (
@@ -28,9 +29,12 @@ const Home = () => {
 
 
           </div>
+
+          <AdsBanner items={5}/>
         </div>
      
     </section>
+
 
     <br/>
     <br/>

@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 
 const HomeCatSlider = () => {
@@ -12,15 +12,21 @@ const HomeCatSlider = () => {
       <Swiper
         slidesPerView={7}
         spaceBetween={30}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+          reverseDirection: true,
+        }}
         pagination={{
           clickable: false,
         }}
         navigation={true}
-        modules={Navigation}
+        modules={[Autoplay, Navigation]}
         className="mySwiper w-[95%] !h-[100%] mx-auto !my-6 "
       >
         <SwiperSlide>
-          
+          ``
           <div className="item text-center justify-center rounded-md flex flex-col bg-white border border-transparent transition-all duration-300 hover:border-[rgba(94,85,85,0.34)] hover:shadow-[0_0_15px_rgba(0,0,0,0.35)] cursor-pointer">
             <img
               src="https://png.pngtree.com/png-vector/20250703/ourmid/pngtree-black-headphones-sleek-3d-render-png-image_16600605.webp"
